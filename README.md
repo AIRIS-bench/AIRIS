@@ -1,10 +1,10 @@
-<h1 align="center">AIRIS: Benchmarking Social Embodied Intelligence in Egocentric Streaming Videos</h1>
-
 <p align="center">
   <a href="https://airis-bench.github.io/">
     <img src="https://airis-bench.github.io/assets/logo.png" alt="AIRIS logo" width="150">
   </a>
 </p>
+
+<h1 align="center">AIRIS: Benchmarking Social Embodied Intelligence in Egocentric Streaming Videos</h1>
 
 [![Project Page](https://img.shields.io/badge/Project-Page-5B5BD6)](https://airis-bench.github.io/)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](#installation)
