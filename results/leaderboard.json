@@ -1,0 +1,2222 @@
+{
+  "schema_version": "airis-public-leaderboard-v1",
+  "benchmark_version": "02.5-core3",
+  "n_questions": 8000,
+  "n_models": 45,
+  "n_models_in_main_paper_table": 37,
+  "score_range": [
+    0,
+    1
+  ],
+  "higher_is_better": true,
+  "headline_metric": "Unweighted mean of the four question-micro A-I-R-I layer scores.",
+  "invalid_prediction_policy": "Missing, empty, invalid, and out-of-vocabulary predictions receive zero credit.",
+  "project_page": "https://airis-bench.github.io/#leaderboard",
+  "entries": [
+    {
+      "rank": 1,
+      "model": "Gemini-3.7-Flash",
+      "family": "Closed-source",
+      "in_main_paper_table": true,
+      "model_url": "https://ai.google.dev/gemini-api/docs/models/gemini-3.7-flash",
+      "overall": 0.726,
+      "attention": 0.936,
+      "intention": 0.569,
+      "reaction": 0.638,
+      "interaction": 0.76,
+      "diagnostics": {
+        "attention": {
+          "all": 0.936,
+          "nonverbal": 0.901,
+          "target": 0.951,
+          "ground": 0.948,
+          "spatial": 0.911,
+          "joint": 0.985,
+          "multimodal": 0.873
+        },
+        "intention": {
+          "all": 0.569,
+          "key": 0.549,
+          "online": 0.569,
+          "evidence": 0.617,
+          "fcr": 0.421,
+          "ias": 0.237
+        },
+        "reaction": {
+          "all": 0.638,
+          "engage": 0.546,
+          "domain": 0.831,
+          "subspeak": 0.486,
+          "joint": 0.083,
+          "comm": 0.477,
+          "nav": 0.417,
+          "manip": 0.484,
+          "idle": 0.414
+        },
+        "interaction": {
+          "all": 0.76,
+          "state": 0.441,
+          "outcome": 0.885,
+          "comp": 0.903,
+          "viol": 0.525
+        }
+      }
+    },
+    {
+      "rank": 2,
+      "model": "Gemini-3.1-Pro",
+      "family": "Closed-source",
+      "in_main_paper_table": true,
+      "model_url": "https://ai.google.dev/gemini-api/docs/models/gemini-3.1-pro-preview",
+      "overall": 0.682,
+      "attention": 0.851,
+      "intention": 0.496,
+      "reaction": 0.62,
+      "interaction": 0.76,
+      "diagnostics": {
+        "attention": {
+          "all": 0.851,
+          "nonverbal": 0.859,
+          "target": 0.897,
+          "ground": 0.82,
+          "spatial": 0.718,
+          "joint": 0.921,
+          "multimodal": 0.912
+        },
+        "intention": {
+          "all": 0.496,
+          "key": 0.425,
+          "online": 0.523,
+          "evidence": 0.587,
+          "fcr": 0.22,
+          "ias": 0.126
+        },
+        "reaction": {
+          "all": 0.62,
+          "engage": 0.53,
+          "domain": 0.838,
+          "subspeak": 0.487,
+          "joint": 0.111,
+          "comm": 0.487,
+          "nav": 0.498,
+          "manip": 0.494,
+          "idle": 0.443
+        },
+        "interaction": {
+          "all": 0.76,
+          "state": 0.368,
+          "outcome": 0.903,
+          "comp": 0.902,
+          "viol": 0.495
+        }
+      }
+    },
+    {
+      "rank": 3,
+      "model": "GPT-5.6-Sol",
+      "family": "Closed-source",
+      "in_main_paper_table": true,
+      "model_url": "https://developers.openai.com/api/docs/models/gpt-5.6-sol",
+      "overall": 0.656,
+      "attention": 0.906,
+      "intention": 0.501,
+      "reaction": 0.489,
+      "interaction": 0.729,
+      "diagnostics": {
+        "attention": {
+          "all": 0.906,
+          "nonverbal": 0.926,
+          "target": 0.925,
+          "ground": 0.884,
+          "spatial": 0.87,
+          "joint": 0.899,
+          "multimodal": 0.859
+        },
+        "intention": {
+          "all": 0.501,
+          "key": 0.52,
+          "online": 0.457,
+          "evidence": 0.569,
+          "fcr": 0.574,
+          "ias": 0.154
+        },
+        "reaction": {
+          "all": 0.489,
+          "engage": 0.261,
+          "domain": 0.829,
+          "subspeak": 0.426,
+          "joint": 0.128,
+          "comm": 0.438,
+          "nav": 0.484,
+          "manip": 0.446,
+          "idle": 0.466
+        },
+        "interaction": {
+          "all": 0.729,
+          "state": 0.4,
+          "outcome": 0.88,
+          "comp": 0.906,
+          "viol": 0.494
+        }
+      }
+    },
+    {
+      "rank": 4,
+      "model": "Qwen3.6-35B-A3B",
+      "family": "Open general",
+      "in_main_paper_table": true,
+      "model_url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B",
+      "overall": 0.65,
+      "attention": 0.723,
+      "intention": 0.485,
+      "reaction": 0.655,
+      "interaction": 0.738,
+      "diagnostics": {
+        "attention": {
+          "all": 0.723,
+          "nonverbal": 0.714,
+          "target": 0.891,
+          "ground": 0.646,
+          "spatial": 0.56,
+          "joint": 0.732,
+          "multimodal": 0.875
+        },
+        "intention": {
+          "all": 0.485,
+          "key": 0.501,
+          "online": 0.439,
+          "evidence": 0.568,
+          "fcr": 0.634,
+          "ias": 0.122
+        },
+        "reaction": {
+          "all": 0.655,
+          "engage": 0.605,
+          "domain": 0.818,
+          "subspeak": 0.446,
+          "joint": 0.064,
+          "comm": 0.466,
+          "nav": 0.463,
+          "manip": 0.451,
+          "idle": 0.53
+        },
+        "interaction": {
+          "all": 0.738,
+          "state": 0.293,
+          "outcome": 0.927,
+          "comp": 0.881,
+          "viol": 0.577
+        }
+      }
+    },
+    {
+      "rank": 5,
+      "model": "GLM-5.3-Flash",
+      "family": "Open general",
+      "in_main_paper_table": true,
+      "model_url": "https://huggingface.co/zai-org/GLM-5.3-Flash",
+      "overall": 0.633,
+      "attention": 0.801,
+      "intention": 0.501,
+      "reaction": 0.59,
+      "interaction": 0.638,
+      "diagnostics": {
+        "attention": {
+          "all": 0.801,
+          "nonverbal": 0.71,
+          "target": 0.882,
+          "ground": 0.802,
+          "spatial": 0.834,
+          "joint": 0.77,
+          "multimodal": 0.824
+        },
+        "intention": {
+          "all": 0.501,
+          "key": 0.513,
+          "online": 0.455,
+          "evidence": 0.59,
+          "fcr": 0.644,
+          "ias": 0.128
+        },
+        "reaction": {
+          "all": 0.59,
+          "engage": 0.531,
+          "domain": 0.81,
+          "subspeak": 0.379,
+          "joint": 0.067,
+          "comm": 0.403,
+          "nav": 0.463,
+          "manip": 0.428,
+          "idle": 0.384
+        },
+        "interaction": {
+          "all": 0.638,
+          "state": 0.386,
+          "outcome": 0.823,
+          "comp": 0.706,
+          "viol": 0.47
+        }
+      }
+    },
+    {
+      "rank": 6,
+      "model": "Gemma-4-31B-IT",
+      "family": "Open general",
+      "in_main_paper_table": true,
+      "model_url": "https://huggingface.co/google/gemma-4-31B-it",
+      "overall": 0.624,
+      "attention": 0.733,
+      "intention": 0.502,
+      "reaction": 0.535,
+      "interaction": 0.728,
+      "diagnostics": {
+        "attention": {
+          "all": 0.733,
+          "nonverbal": 0.781,
+          "target": 0.899,
+          "ground": 0.619,
+          "spatial": 0.468,
+          "joint": 0.771,
+          "multimodal": 0.844
+        },
+        "intention": {
+          "all": 0.502,
+          "key": 0.501,
+          "online": 0.482,
+          "evidence": 0.554,
+          "fcr": 0.372,
+          "ias": 0.167
+        },
+        "reaction": {
+          "all": 0.535,
+          "engage": 0.394,
+          "domain": 0.81,
+          "subspeak": 0.471,
+          "joint": 0.123,
+          "comm": 0.452,
+          "nav": 0.416,
+          "manip": 0.39,
+          "idle": 0.37
+        },
+        "interaction": {
+          "all": 0.728,
+          "state": 0.281,
+          "outcome": 0.812,
+          "comp": 0.907,
+          "viol": 0.495
+        }
+      }
+    },
+    {
+      "rank": 7,
+      "model": "Doubao-seed-2.0-lite",
+      "family": "Closed-source",
+      "in_main_paper_table": true,
+      "model_url": "https://seed.bytedance.com/zh/seed2",
+      "overall": 0.616,
+      "attention": 0.759,
+      "intention": 0.418,
+      "reaction": 0.619,
+      "interaction": 0.669,
+      "diagnostics": {
+        "attention": {
+          "all": 0.759,
+          "nonverbal": 0.707,
+          "target": 0.859,
+          "ground": 0.742,
+          "spatial": 0.742,
+          "joint": 0.742,
+          "multimodal": 0.799
+        },
+        "intention": {
+          "all": 0.418,
+          "key": 0.409,
+          "online": 0.363,
+          "evidence": 0.582,
+          "fcr": 0.686,
+          "ias": 0.066
+        },
+        "reaction": {
+          "all": 0.619,
+          "engage": 0.564,
+          "domain": 0.792,
+          "subspeak": 0.435,
+          "joint": 0.092,
+          "comm": 0.483,
+          "nav": 0.526,
+          "manip": 0.504,
+          "idle": 0.573
+        },
+        "interaction": {
+          "all": 0.669,
+          "state": 0.345,
+          "outcome": 0.87,
+          "comp": 0.726,
+          "viol": 0.572
+        }
+      }
+    },
+    {
+      "rank": 8,
+      "model": "DeepSeek-V4.1-Flash",
+      "family": "Open general",
+      "in_main_paper_table": true,
+      "model_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+      "overall": 0.605,
+      "attention": 0.707,
+      "intention": 0.509,
+      "reaction": 0.548,
+      "interaction": 0.657,
+      "diagnostics": {
+        "attention": {
+          "all": 0.707,
+          "nonverbal": 0.718,
+          "target": 0.829,
+          "ground": 0.627,
+          "spatial": 0.675,
+          "joint": 0.58,
+          "multimodal": 0.817
+        },
+        "intention": {
+          "all": 0.509,
+          "key": 0.539,
+          "online": 0.451,
+          "evidence": 0.588,
+          "fcr": 0.552,
+          "ias": 0.121
+        },
+        "reaction": {
+          "all": 0.548,
+          "engage": 0.456,
+          "domain": 0.815,
+          "subspeak": 0.401,
+          "joint": 0.108,
+          "comm": 0.42,
+          "nav": 0.47,
+          "manip": 0.391,
+          "idle": 0.313
+        },
+        "interaction": {
+          "all": 0.657,
+          "state": 0.339,
+          "outcome": 0.828,
+          "comp": 0.737,
+          "viol": 0.508
+        }
+      }
+    },
+    {
+      "rank": 9,
+      "model": "Qwen3.6-27B",
+      "family": "Open general",
+      "in_main_paper_table": true,
+      "model_url": "https://huggingface.co/Qwen/Qwen3.6-27B",
+      "overall": 0.602,
+      "attention": 0.649,
+      "intention": 0.48,
+      "reaction": 0.545,
+      "interaction": 0.733,
+      "diagnostics": {
+        "attention": {
+          "all": 0.649,
+          "nonverbal": 0.709,
+          "target": 0.836,
+          "ground": 0.528,
+          "spatial": 0.517,
+          "joint": 0.539,
+          "multimodal": 0.873
+        },
+        "intention": {
+          "all": 0.48,
+          "key": 0.434,
+          "online": 0.483,
+          "evidence": 0.578,
+          "fcr": 0.25,
+          "ias": 0.119
+        },
+        "reaction": {
+          "all": 0.545,
+          "engage": 0.383,
+          "domain": 0.824,
+          "subspeak": 0.453,
+          "joint": 0.128,
+          "comm": 0.488,
+          "nav": 0.457,
+          "manip": 0.472,
+          "idle": 0.448
+        },
+        "interaction": {
+          "all": 0.733,
+          "state": 0.235,
+          "outcome": 0.853,
+          "comp": 0.905,
+          "viol": 0.501
+        }
+      }
+    },
+    {
+      "rank": 10,
+      "model": "HY-Embodied-VLM-1.0",
+      "family": "Open embodied",
+      "in_main_paper_table": true,
+      "model_url": "https://huggingface.co/tencent/Hy-Embodied-VLM-1.0",
+      "overall": 0.599,
+      "attention": 0.596,
+      "intention": 0.396,
+      "reaction": 0.688,
+      "interaction": 0.716,
+      "diagnostics": {
+        "attention": {
+          "all": 0.596,
+          "nonverbal": 0.577,
+          "target": 0.834,
+          "ground": 0.492,
+          "spatial": 0.532,
+          "joint": 0.453,
+          "multimodal": 0.806
+        },
+        "intention": {
+          "all": 0.396,
+          "key": 0.284,
+          "online": 0.419,
+          "evidence": 0.595,
+          "fcr": 0.605,
+          "ias": 0.105
+        },
+        "reaction": {
+          "all": 0.688,
+          "engage": 0.485,
+          "domain": 0.749,
+          "subspeak": 0.522,
+          "joint": 0.028,
+          "comm": 0.558,
+          "nav": 0.575,
+          "manip": 0.502,
+          "idle": 0.549
+        },
+        "interaction": {
+          "all": 0.716,
+          "state": 0.209,
+          "outcome": 0.943,
+          "comp": 0.873,
+          "viol": 0.481
+        }
+      }
+    },
+    {
+      "rank": 11,
+      "model": "Qwen3.5-35B-A3B",
+      "family": "Open general",
+      "in_main_paper_table": false,
+      "model_url": "https://huggingface.co/Qwen/Qwen3.5-35B-A3B",
+      "overall": 0.595,
+      "attention": 0.608,
+      "intention": 0.448,
+      "reaction": 0.609,
+      "interaction": 0.715,
+      "diagnostics": {
+        "attention": {
+          "all": 0.608,
+          "nonverbal": 0.573,
+          "target": 0.829,
+          "ground": 0.505,
+          "spatial": 0.457,
+          "joint": 0.552,
+          "multimodal": 0.815
+        },
+        "intention": {
+          "all": 0.448,
+          "key": 0.369,
+          "online": 0.474,
+          "evidence": 0.565,
+          "fcr": 0.441,
+          "ias": 0.126
+        },
+        "reaction": {
+          "all": 0.609,
+          "engage": 0.563,
+          "domain": 0.848,
+          "subspeak": 0.428,
+          "joint": 0.1,
+          "comm": 0.421,
+          "nav": 0.445,
+          "manip": 0.384,
+          "idle": 0.447
+        },
+        "interaction": {
+          "all": 0.715,
+          "state": 0.258,
+          "outcome": 0.9,
+          "comp": 0.877,
+          "viol": 0.461
+        }
+      }
+    },
+    {
+      "rank": 12,
+      "model": "Qwen3-VL-32B-Instruct",
+      "family": "Open general",
+      "in_main_paper_table": true,
+      "model_url": "https://huggingface.co/Qwen/Qwen3-VL-32B-Instruct",
+      "overall": 0.589,
+      "attention": 0.682,
+      "intention": 0.472,
+      "reaction": 0.479,
+      "interaction": 0.723,
+      "diagnostics": {
+        "attention": {
+          "all": 0.682,
+          "nonverbal": 0.667,
+          "target": 0.886,
+          "ground": 0.598,
+          "spatial": 0.584,
+          "joint": 0.611,
+          "multimodal": 0.829
+        },
+        "intention": {
+          "all": 0.472,
+          "key": 0.409,
+          "online": 0.481,
+          "evidence": 0.596,
+          "fcr": 0.397,
+          "ias": 0.133
+        },
+        "reaction": {
+          "all": 0.479,
+          "engage": 0.217,
+          "domain": 0.826,
+          "subspeak": 0.425,
+          "joint": 0.144,
+          "comm": 0.452,
+          "nav": 0.489,
+          "manip": 0.452,
+          "idle": 0.457
+        },
+        "interaction": {
+          "all": 0.723,
+          "state": 0.299,
+          "outcome": 0.69,
+          "comp": 0.923,
+          "viol": 0.589
+        }
+      }
+    },
+    {
+      "rank": 13,
+      "model": "RynnBrain1.1-9B",
+      "family": "Open embodied",
+      "in_main_paper_table": true,
+      "model_url": "https://huggingface.co/Alibaba-DAMO-Academy/RynnBrain1.1-9B",
+      "overall": 0.576,
+      "attention": 0.593,
+      "intention": 0.417,
+      "reaction": 0.557,
+      "interaction": 0.736,
+      "diagnostics": {
+        "attention": {
+          "all": 0.593,
+          "nonverbal": 0.646,
+          "target": 0.819,
+          "ground": 0.47,
+          "spatial": 0.4,
+          "joint": 0.539,
+          "multimodal": 0.619
+        },
+        "intention": {
+          "all": 0.417,
+          "key": 0.321,
+          "online": 0.468,
+          "evidence": 0.509,
+          "fcr": 0.327,
+          "ias": 0.123
+        },
+        "reaction": {
+          "all": 0.557,
+          "engage": 0.605,
+          "domain": 0.76,
+          "subspeak": 0.315,
+          "joint": 0.082,
+          "comm": 0.3,
+          "nav": 0.345,
+          "manip": 0.249,
+          "idle": 0.244
+        },
+        "interaction": {
+          "all": 0.736,
+          "state": 0.275,
+          "outcome": 0.818,
+          "comp": 0.918,
+          "viol": 0.583
+        }
+      }
+    },
+    {
+      "rank": 14,
+      "model": "JoyAI-VL-Interaction-Preview",
+      "family": "Open streaming",
+      "in_main_paper_table": true,
+      "model_url": "https://huggingface.co/jdopensource/JoyAI-VL-Interaction-Preview",
+      "overall": 0.568,
+      "attention": 0.639,
+      "intention": 0.436,
+      "reaction": 0.61,
+      "interaction": 0.586,
+      "diagnostics": {
+        "attention": {
+          "all": 0.639,
+          "nonverbal": 0.522,
+          "target": 0.761,
+          "ground": 0.628,
+          "spatial": 0.519,
+          "joint": 0.737,
+          "multimodal": 0.777
+        },
+        "intention": {
+          "all": 0.436,
+          "key": 0.407,
+          "online": 0.408,
+          "evidence": 0.57,
+          "fcr": 0.529,
+          "ias": 0.113
+        },
+        "reaction": {
+          "all": 0.61,
+          "engage": 0.508,
+          "domain": 0.752,
+          "subspeak": 0.421,
+          "joint": 0.029,
+          "comm": 0.434,
+          "nav": 0.455,
+          "manip": 0.372,
+          "idle": 0.529
+        },
+        "interaction": {
+          "all": 0.586,
+          "state": 0.287,
+          "outcome": 0.943,
+          "comp": 0.635,
+          "viol": 0.417
+        }
+      }
+    },
+    {
+      "rank": 15,
+      "model": "Qwen3.5-27B",
+      "family": "Open general",
+      "in_main_paper_table": false,
+      "model_url": "https://huggingface.co/Qwen/Qwen3.5-27B",
+      "overall": 0.561,
+      "attention": 0.668,
+      "intention": 0.382,
+      "reaction": 0.539,
+      "interaction": 0.656,
+      "diagnostics": {
+        "attention": {
+          "all": 0.668,
+          "nonverbal": 0.692,
+          "target": 0.827,
+          "ground": 0.593,
+          "spatial": 0.511,
+          "joint": 0.675,
+          "multimodal": 0.703
+        },
+        "intention": {
+          "all": 0.382,
+          "key": 0.384,
+          "online": 0.336,
+          "evidence": 0.49,
+          "fcr": 0.645,
+          "ias": 0.063
+        },
+        "reaction": {
+          "all": 0.539,
+          "engage": 0.446,
+          "domain": 0.684,
+          "subspeak": 0.481,
+          "joint": 0.123,
+          "comm": 0.504,
+          "nav": 0.506,
+          "manip": 0.474,
+          "idle": 0.513
+        },
+        "interaction": {
+          "all": 0.656,
+          "state": 0.264,
+          "outcome": 0.87,
+          "comp": 0.768,
+          "viol": 0.478
+        }
+      }
+    },
+    {
+      "rank": 16,
+      "model": "Qwen3.8-27B",
+      "family": "Open general",
+      "in_main_paper_table": true,
+      "model_url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "overall": 0.547,
+      "attention": 0.685,
+      "intention": 0.395,
+      "reaction": 0.475,
+      "interaction": 0.632,
+      "diagnostics": {
+        "attention": {
+          "all": 0.685,
+          "nonverbal": 0.705,
+          "target": 0.835,
+          "ground": 0.616,
+          "spatial": 0.498,
+          "joint": 0.734,
+          "multimodal": 0.659
+        },
+        "intention": {
+          "all": 0.395,
+          "key": 0.391,
+          "online": 0.374,
+          "evidence": 0.459,
+          "fcr": 0.512,
+          "ias": 0.052
+        },
+        "reaction": {
+          "all": 0.475,
+          "engage": 0.251,
+          "domain": 0.651,
+          "subspeak": 0.491,
+          "joint": 0.137,
+          "comm": 0.541,
+          "nav": 0.605,
+          "manip": 0.597,
+          "idle": 0.567
+        },
+        "interaction": {
+          "all": 0.632,
+          "state": 0.339,
+          "outcome": 0.86,
+          "comp": 0.717,
+          "viol": 0.341
+        }
+      }
+    },
+    {
+      "rank": 17,
+      "model": "RynnBrain-30B-A3B",
+      "family": "Open embodied",
+      "in_main_paper_table": true,
+      "model_url": "https://huggingface.co/Alibaba-DAMO-Academy/RynnBrain-30B-A3B",
+      "overall": 0.544,
+      "attention": 0.656,
+      "intention": 0.435,
+      "reaction": 0.41,
+      "interaction": 0.674,
+      "diagnostics": {
+        "attention": {
+          "all": 0.656,
+          "nonverbal": 0.659,
+          "target": 0.777,
+          "ground": 0.596,
+          "spatial": 0.592,
+          "joint": 0.601,
+          "multimodal": 0.717
+        },
+        "intention": {
+          "all": 0.435,
+          "key": 0.382,
+          "online": 0.471,
+          "evidence": 0.461,
+          "fcr": 0.245,
+          "ias": 0.091
+        },
+        "reaction": {
+          "all": 0.41,
+          "engage": 0.245,
+          "domain": 0.789,
+          "subspeak": 0.329,
+          "joint": 0.147,
+          "comm": 0.325,
+          "nav": 0.26,
+          "manip": 0.222,
+          "idle": 0.241
+        },
+        "interaction": {
+          "all": 0.674,
+          "state": 0.252,
+          "outcome": 0.927,
+          "comp": 0.723,
+          "viol": 0.508
+        }
+      }
+    },
+    {
+      "rank": 18,
+      "model": "VeBrain-7B",
+      "family": "Open embodied",
+      "in_main_paper_table": true,
+      "model_url": "https://huggingface.co/OpenGVLab/VeBrain",
+      "overall": 0.541,
+      "attention": 0.546,
+      "intention": 0.449,
+      "reaction": 0.47,
+      "interaction": 0.701,
+      "diagnostics": {
+        "attention": {
+          "all": 0.546,
+          "nonverbal": 0.507,
+          "target": 0.801,
+          "ground": 0.44,
+          "spatial": 0.36,
+          "joint": 0.519,
+          "multimodal": 0.782
+        },
+        "intention": {
+          "all": 0.449,
+          "key": 0.358,
+          "online": 0.494,
+          "evidence": 0.541,
+          "fcr": 0.186,
+          "ias": 0.111
+        },
+        "reaction": {
+          "all": 0.47,
+          "engage": 0.154,
+          "domain": 0.8,
+          "subspeak": 0.44,
+          "joint": 0.141,
+          "comm": 0.501,
+          "nav": 0.55,
+          "manip": 0.517,
+          "idle": 0.547
+        },
+        "interaction": {
+          "all": 0.701,
+          "state": 0.27,
+          "outcome": 0.905,
+          "comp": 0.828,
+          "viol": 0.502
+        }
+      }
+    },
+    {
+      "rank": 19,
+      "model": "Pelican1.0-VL-7B",
+      "family": "Open embodied",
+      "in_main_paper_table": true,
+      "model_url": "https://huggingface.co/X-Humanoid/Pelican1.0-VL-7B",
+      "overall": 0.536,
+      "attention": 0.54,
+      "intention": 0.462,
+      "reaction": 0.44,
+      "interaction": 0.7,
+      "diagnostics": {
+        "attention": {
+          "all": 0.54,
+          "nonverbal": 0.581,
+          "target": 0.724,
+          "ground": 0.425,
+          "spatial": 0.298,
+          "joint": 0.551,
+          "multimodal": 0.782
+        },
+        "intention": {
+          "all": 0.462,
+          "key": 0.372,
+          "online": 0.503,
+          "evidence": 0.562,
+          "fcr": 0.142,
+          "ias": 0.099
+        },
+        "reaction": {
+          "all": 0.44,
+          "engage": 0.128,
+          "domain": 0.734,
+          "subspeak": 0.441,
+          "joint": 0.144,
+          "comm": 0.5,
+          "nav": 0.546,
+          "manip": 0.535,
+          "idle": 0.478
+        },
+        "interaction": {
+          "all": 0.7,
+          "state": 0.206,
+          "outcome": 0.877,
+          "comp": 0.875,
+          "viol": 0.47
+        }
+      }
+    },
+    {
+      "rank": 20,
+      "model": "Qwen2.5-VL-7B-Instruct",
+      "family": "Open general",
+      "in_main_paper_table": false,
+      "model_url": "https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct",
+      "overall": 0.535,
+      "attention": 0.507,
+      "intention": 0.452,
+      "reaction": 0.466,
+      "interaction": 0.713,
+      "diagnostics": {
+        "attention": {
+          "all": 0.507,
+          "nonverbal": 0.61,
+          "target": 0.769,
+          "ground": 0.333,
+          "spatial": 0.296,
+          "joint": 0.369,
+          "multimodal": 0.753
+        },
+        "intention": {
+          "all": 0.452,
+          "key": 0.358,
+          "online": 0.499,
+          "evidence": 0.55,
+          "fcr": 0.24,
+          "ias": 0.102
+        },
+        "reaction": {
+          "all": 0.466,
+          "engage": 0.195,
+          "domain": 0.758,
+          "subspeak": 0.461,
+          "joint": 0.144,
+          "comm": 0.489,
+          "nav": 0.498,
+          "manip": 0.459,
+          "idle": 0.416
+        },
+        "interaction": {
+          "all": 0.713,
+          "state": 0.31,
+          "outcome": 0.87,
+          "comp": 0.863,
+          "viol": 0.483
+        }
+      }
+    },
+    {
+      "rank": 21,
+      "model": "AURA-8B",
+      "family": "Open streaming",
+      "in_main_paper_table": true,
+      "model_url": "https://huggingface.co/aurateam/AURA",
+      "overall": 0.533,
+      "attention": 0.624,
+      "intention": 0.472,
+      "reaction": 0.434,
+      "interaction": 0.601,
+      "diagnostics": {
+        "attention": {
+          "all": 0.624,
+          "nonverbal": 0.535,
+          "target": 0.834,
+          "ground": 0.574,
+          "spatial": 0.522,
+          "joint": 0.626,
+          "multimodal": 0.737
+        },
+        "intention": {
+          "all": 0.472,
+          "key": 0.411,
+          "online": 0.49,
+          "evidence": 0.563,
+          "fcr": 0.242,
+          "ias": 0.113
+        },
+        "reaction": {
+          "all": 0.434,
+          "engage": 0.146,
+          "domain": 0.812,
+          "subspeak": 0.391,
+          "joint": 0.144,
+          "comm": 0.389,
+          "nav": 0.414,
+          "manip": 0.331,
+          "idle": 0.404
+        },
+        "interaction": {
+          "all": 0.601,
+          "state": 0.342,
+          "outcome": 0.468,
+          "comp": 0.766,
+          "viol": 0.51
+        }
+      }
+    },
+    {
+      "rank": 22,
+      "model": "InternVL3-8B",
+      "family": "Open general",
+      "in_main_paper_table": true,
+      "model_url": "https://huggingface.co/OpenGVLab/InternVL3-8B",
+      "overall": 0.53,
+      "attention": 0.583,
+      "intention": 0.417,
+      "reaction": 0.518,
+      "interaction": 0.603,
+      "diagnostics": {
+        "attention": {
+          "all": 0.583,
+          "nonverbal": 0.539,
+          "target": 0.778,
+          "ground": 0.513,
+          "spatial": 0.426,
+          "joint": 0.6,
+          "multimodal": 0.803
+        },
+        "intention": {
+          "all": 0.417,
+          "key": 0.395,
+          "online": 0.375,
+          "evidence": 0.573,
+          "fcr": 0.64,
+          "ias": 0.082
+        },
+        "reaction": {
+          "all": 0.518,
+          "engage": 0.271,
+          "domain": 0.781,
+          "subspeak": 0.499,
+          "joint": 0.123,
+          "comm": 0.534,
+          "nav": 0.59,
+          "manip": 0.484,
+          "idle": 0.574
+        },
+        "interaction": {
+          "all": 0.603,
+          "state": 0.212,
+          "outcome": 0.925,
+          "comp": 0.724,
+          "viol": 0.318
+        }
+      }
+    },
+    {
+      "rank": 23,
+      "model": "Qwen2.5-Omni-7B",
+      "family": "Open omni-modal",
+      "in_main_paper_table": true,
+      "model_url": "https://huggingface.co/Qwen/Qwen2.5-Omni-7B",
+      "overall": 0.529,
+      "attention": 0.507,
+      "intention": 0.453,
+      "reaction": 0.449,
+      "interaction": 0.705,
+      "diagnostics": {
+        "attention": {
+          "all": 0.507,
+          "nonverbal": 0.531,
+          "target": 0.745,
+          "ground": 0.375,
+          "spatial": 0.295,
+          "joint": 0.455,
+          "multimodal": 0.784
+        },
+        "intention": {
+          "all": 0.453,
+          "key": 0.378,
+          "online": 0.485,
+          "evidence": 0.543,
+          "fcr": 0.137,
+          "ias": 0.07
+        },
+        "reaction": {
+          "all": 0.449,
+          "engage": 0.126,
+          "domain": 0.796,
+          "subspeak": 0.411,
+          "joint": 0.144,
+          "comm": 0.453,
+          "nav": 0.439,
+          "manip": 0.479,
+          "idle": 0.485
+        },
+        "interaction": {
+          "all": 0.705,
+          "state": 0.267,
+          "outcome": 0.82,
+          "comp": 0.855,
+          "viol": 0.51
+        }
+      }
+    },
+    {
+      "rank": 24,
+      "model": "InternVL3.5-30B-A3B",
+      "family": "Open general",
+      "in_main_paper_table": true,
+      "model_url": "https://huggingface.co/OpenGVLab/InternVL3_5-30B-A3B",
+      "overall": 0.526,
+      "attention": 0.598,
+      "intention": 0.426,
+      "reaction": 0.442,
+      "interaction": 0.639,
+      "diagnostics": {
+        "attention": {
+          "all": 0.598,
+          "nonverbal": 0.455,
+          "target": 0.727,
+          "ground": 0.564,
+          "spatial": 0.575,
+          "joint": 0.553,
+          "multimodal": 0.85
+        },
+        "intention": {
+          "all": 0.426,
+          "key": 0.333,
+          "online": 0.458,
+          "evidence": 0.556,
+          "fcr": 0.338,
+          "ias": 0.095
+        },
+        "reaction": {
+          "all": 0.442,
+          "engage": 0.134,
+          "domain": 0.816,
+          "subspeak": 0.426,
+          "joint": 0.144,
+          "comm": 0.441,
+          "nav": 0.457,
+          "manip": 0.414,
+          "idle": 0.503
+        },
+        "interaction": {
+          "all": 0.639,
+          "state": 0.226,
+          "outcome": 0.73,
+          "comp": 0.754,
+          "viol": 0.511
+        }
+      }
+    },
+    {
+      "rank": 25,
+      "model": "MiMo-Embodied-7B",
+      "family": "Open embodied",
+      "in_main_paper_table": true,
+      "model_url": "https://huggingface.co/XiaomiMiMo/MiMo-Embodied-7B",
+      "overall": 0.526,
+      "attention": 0.533,
+      "intention": 0.44,
+      "reaction": 0.643,
+      "interaction": 0.487,
+      "diagnostics": {
+        "attention": {
+          "all": 0.533,
+          "nonverbal": 0.577,
+          "target": 0.761,
+          "ground": 0.391,
+          "spatial": 0.337,
+          "joint": 0.446,
+          "multimodal": 0.812
+        },
+        "intention": {
+          "all": 0.44,
+          "key": 0.396,
+          "online": 0.407,
+          "evidence": 0.623,
+          "fcr": 0.64,
+          "ias": 0.114
+        },
+        "reaction": {
+          "all": 0.643,
+          "engage": 0.558,
+          "domain": 0.785,
+          "subspeak": 0.463,
+          "joint": 0.056,
+          "comm": 0.512,
+          "nav": 0.55,
+          "manip": 0.536,
+          "idle": 0.622
+        },
+        "interaction": {
+          "all": 0.487,
+          "state": 0.322,
+          "outcome": 0.215,
+          "comp": 0.669,
+          "viol": 0.466
+        }
+      }
+    },
+    {
+      "rank": 26,
+      "model": "Qwen3-Omni-30B-A3B-Instruct",
+      "family": "Open omni-modal",
+      "in_main_paper_table": true,
+      "model_url": "https://huggingface.co/Qwen/Qwen3-Omni-30B-A3B-Instruct",
+      "overall": 0.526,
+      "attention": 0.646,
+      "intention": 0.419,
+      "reaction": 0.39,
+      "interaction": 0.647,
+      "diagnostics": {
+        "attention": {
+          "all": 0.646,
+          "nonverbal": 0.589,
+          "target": 0.814,
+          "ground": 0.59,
+          "spatial": 0.501,
+          "joint": 0.679,
+          "multimodal": 0.581
+        },
+        "intention": {
+          "all": 0.419,
+          "key": 0.323,
+          "online": 0.498,
+          "evidence": 0.439,
+          "fcr": 0.291,
+          "ias": 0.153
+        },
+        "reaction": {
+          "all": 0.39,
+          "engage": 0.138,
+          "domain": 0.757,
+          "subspeak": 0.343,
+          "joint": 0.141,
+          "comm": 0.356,
+          "nav": 0.369,
+          "manip": 0.31,
+          "idle": 0.338
+        },
+        "interaction": {
+          "all": 0.647,
+          "state": 0.357,
+          "outcome": 0.848,
+          "comp": 0.746,
+          "viol": 0.415
+        }
+      }
+    },
+    {
+      "rank": 27,
+      "model": "StreamingVLM",
+      "family": "Open streaming",
+      "in_main_paper_table": true,
+      "model_url": "https://huggingface.co/mit-han-lab/StreamingVLM",
+      "overall": 0.512,
+      "attention": 0.456,
+      "intention": 0.4,
+      "reaction": 0.536,
+      "interaction": 0.655,
+      "diagnostics": {
+        "attention": {
+          "all": 0.456,
+          "nonverbal": 0.507,
+          "target": 0.753,
+          "ground": 0.292,
+          "spatial": 0.222,
+          "joint": 0.361,
+          "multimodal": 0.763
+        },
+        "intention": {
+          "all": 0.4,
+          "key": 0.258,
+          "online": 0.449,
+          "evidence": 0.598,
+          "fcr": 0.149,
+          "ias": 0.029
+        },
+        "reaction": {
+          "all": 0.536,
+          "engage": 0.302,
+          "domain": 0.733,
+          "subspeak": 0.534,
+          "joint": 0.141,
+          "comm": 0.6,
+          "nav": 0.609,
+          "manip": 0.65,
+          "idle": 0.622
+        },
+        "interaction": {
+          "all": 0.655,
+          "state": 0.342,
+          "outcome": 0.925,
+          "comp": 0.785,
+          "viol": 0.413
+        }
+      }
+    },
+    {
+      "rank": 28,
+      "model": "RynnBrain1.1-2B",
+      "family": "Open embodied",
+      "in_main_paper_table": false,
+      "model_url": "https://huggingface.co/Alibaba-DAMO-Academy/RynnBrain1.1-2B",
+      "overall": 0.508,
+      "attention": 0.602,
+      "intention": 0.396,
+      "reaction": 0.467,
+      "interaction": 0.567,
+      "diagnostics": {
+        "attention": {
+          "all": 0.602,
+          "nonverbal": 0.529,
+          "target": 0.824,
+          "ground": 0.563,
+          "spatial": 0.335,
+          "joint": 0.791,
+          "multimodal": 0.574
+        },
+        "intention": {
+          "all": 0.396,
+          "key": 0.346,
+          "online": 0.43,
+          "evidence": 0.424,
+          "fcr": 0.333,
+          "ias": 0.073
+        },
+        "reaction": {
+          "all": 0.467,
+          "engage": 0.426,
+          "domain": 0.719,
+          "subspeak": 0.334,
+          "joint": 0.09,
+          "comm": 0.299,
+          "nav": 0.257,
+          "manip": 0.235,
+          "idle": 0.349
+        },
+        "interaction": {
+          "all": 0.567,
+          "state": 0.238,
+          "outcome": 0.807,
+          "comp": 0.53,
+          "viol": 0.49
+        }
+      }
+    },
+    {
+      "rank": 29,
+      "model": "RoboBrain2.0-7B",
+      "family": "Open embodied",
+      "in_main_paper_table": true,
+      "model_url": "https://huggingface.co/BAAI/RoboBrain2.0-7B",
+      "overall": 0.505,
+      "attention": 0.511,
+      "intention": 0.439,
+      "reaction": 0.471,
+      "interaction": 0.597,
+      "diagnostics": {
+        "attention": {
+          "all": 0.511,
+          "nonverbal": 0.545,
+          "target": 0.809,
+          "ground": 0.349,
+          "spatial": 0.307,
+          "joint": 0.391,
+          "multimodal": 0.829
+        },
+        "intention": {
+          "all": 0.439,
+          "key": 0.368,
+          "online": 0.447,
+          "evidence": 0.581,
+          "fcr": 0.254,
+          "ias": 0.054
+        },
+        "reaction": {
+          "all": 0.471,
+          "engage": 0.184,
+          "domain": 0.782,
+          "subspeak": 0.448,
+          "joint": 0.146,
+          "comm": 0.488,
+          "nav": 0.42,
+          "manip": 0.527,
+          "idle": 0.516
+        },
+        "interaction": {
+          "all": 0.597,
+          "state": 0.229,
+          "outcome": 0.943,
+          "comp": 0.696,
+          "viol": 0.379
+        }
+      }
+    },
+    {
+      "rank": 30,
+      "model": "InternVL3.5-8B",
+      "family": "Open general",
+      "in_main_paper_table": true,
+      "model_url": "https://huggingface.co/OpenGVLab/InternVL3_5-8B",
+      "overall": 0.5,
+      "attention": 0.574,
+      "intention": 0.406,
+      "reaction": 0.458,
+      "interaction": 0.562,
+      "diagnostics": {
+        "attention": {
+          "all": 0.574,
+          "nonverbal": 0.524,
+          "target": 0.768,
+          "ground": 0.49,
+          "spatial": 0.557,
+          "joint": 0.422,
+          "multimodal": 0.766
+        },
+        "intention": {
+          "all": 0.406,
+          "key": 0.367,
+          "online": 0.374,
+          "evidence": 0.579,
+          "fcr": 0.613,
+          "ias": 0.094
+        },
+        "reaction": {
+          "all": 0.458,
+          "engage": 0.309,
+          "domain": 0.752,
+          "subspeak": 0.394,
+          "joint": 0.119,
+          "comm": 0.388,
+          "nav": 0.315,
+          "manip": 0.352,
+          "idle": 0.406
+        },
+        "interaction": {
+          "all": 0.562,
+          "state": 0.27,
+          "outcome": 0.728,
+          "comp": 0.689,
+          "viol": 0.351
+        }
+      }
+    },
+    {
+      "rank": 31,
+      "model": "RoboBrain2.0-32B",
+      "family": "Open embodied",
+      "in_main_paper_table": false,
+      "model_url": "https://huggingface.co/BAAI/RoboBrain2.0-32B",
+      "overall": 0.487,
+      "attention": 0.486,
+      "intention": 0.451,
+      "reaction": 0.441,
+      "interaction": 0.571,
+      "diagnostics": {
+        "attention": {
+          "all": 0.486,
+          "nonverbal": 0.566,
+          "target": 0.781,
+          "ground": 0.315,
+          "spatial": 0.271,
+          "joint": 0.358,
+          "multimodal": 0.731
+        },
+        "intention": {
+          "all": 0.451,
+          "key": 0.423,
+          "online": 0.444,
+          "evidence": 0.534,
+          "fcr": 0.199,
+          "ias": 0.049
+        },
+        "reaction": {
+          "all": 0.441,
+          "engage": 0.229,
+          "domain": 0.709,
+          "subspeak": 0.407,
+          "joint": 0.136,
+          "comm": 0.427,
+          "nav": 0.354,
+          "manip": 0.403,
+          "idle": 0.462
+        },
+        "interaction": {
+          "all": 0.571,
+          "state": 0.22,
+          "outcome": 0.92,
+          "comp": 0.639,
+          "viol": 0.367
+        }
+      }
+    },
+    {
+      "rank": 32,
+      "model": "OmniVinci",
+      "family": "Open omni-modal",
+      "in_main_paper_table": true,
+      "model_url": "https://huggingface.co/nvidia/omnivinci",
+      "overall": 0.484,
+      "attention": 0.546,
+      "intention": 0.401,
+      "reaction": 0.34,
+      "interaction": 0.651,
+      "diagnostics": {
+        "attention": {
+          "all": 0.546,
+          "nonverbal": 0.592,
+          "target": 0.733,
+          "ground": 0.456,
+          "spatial": 0.346,
+          "joint": 0.565,
+          "multimodal": 0.557
+        },
+        "intention": {
+          "all": 0.401,
+          "key": 0.388,
+          "online": 0.41,
+          "evidence": 0.409,
+          "fcr": 0.474,
+          "ias": 0.116
+        },
+        "reaction": {
+          "all": 0.34,
+          "engage": 0.126,
+          "domain": 0.713,
+          "subspeak": 0.256,
+          "joint": 0.144,
+          "comm": 0.265,
+          "nav": 0.286,
+          "manip": 0.221,
+          "idle": 0.263
+        },
+        "interaction": {
+          "all": 0.651,
+          "state": 0.316,
+          "outcome": 0.785,
+          "comp": 0.74,
+          "viol": 0.454
+        }
+      }
+    },
+    {
+      "rank": 33,
+      "model": "Embodied-R1-3B-V1",
+      "family": "Open embodied",
+      "in_main_paper_table": true,
+      "model_url": "https://huggingface.co/IffYuan/Embodied-R1-3B-v1",
+      "overall": 0.48,
+      "attention": 0.475,
+      "intention": 0.408,
+      "reaction": 0.468,
+      "interaction": 0.569,
+      "diagnostics": {
+        "attention": {
+          "all": 0.475,
+          "nonverbal": 0.423,
+          "target": 0.703,
+          "ground": 0.375,
+          "spatial": 0.241,
+          "joint": 0.509,
+          "multimodal": 0.83
+        },
+        "intention": {
+          "all": 0.408,
+          "key": 0.368,
+          "online": 0.376,
+          "evidence": 0.58,
+          "fcr": 0.618,
+          "ias": 0.073
+        },
+        "reaction": {
+          "all": 0.468,
+          "engage": 0.126,
+          "domain": 0.784,
+          "subspeak": 0.451,
+          "joint": 0.144,
+          "comm": 0.518,
+          "nav": 0.552,
+          "manip": 0.576,
+          "idle": 0.655
+        },
+        "interaction": {
+          "all": 0.569,
+          "state": 0.197,
+          "outcome": 0.828,
+          "comp": 0.635,
+          "viol": 0.412
+        }
+      }
+    },
+    {
+      "rank": 34,
+      "model": "Qwen2.5-VL-3B-Instruct",
+      "family": "Open general",
+      "in_main_paper_table": false,
+      "model_url": "https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct",
+      "overall": 0.476,
+      "attention": 0.495,
+      "intention": 0.409,
+      "reaction": 0.483,
+      "interaction": 0.515,
+      "diagnostics": {
+        "attention": {
+          "all": 0.495,
+          "nonverbal": 0.484,
+          "target": 0.758,
+          "ground": 0.372,
+          "spatial": 0.254,
+          "joint": 0.49,
+          "multimodal": 0.822
+        },
+        "intention": {
+          "all": 0.409,
+          "key": 0.39,
+          "online": 0.357,
+          "evidence": 0.586,
+          "fcr": 0.699,
+          "ias": 0.069
+        },
+        "reaction": {
+          "all": 0.483,
+          "engage": 0.142,
+          "domain": 0.789,
+          "subspeak": 0.475,
+          "joint": 0.144,
+          "comm": 0.548,
+          "nav": 0.583,
+          "manip": 0.589,
+          "idle": 0.651
+        },
+        "interaction": {
+          "all": 0.515,
+          "state": 0.2,
+          "outcome": 0.903,
+          "comp": 0.538,
+          "viol": 0.385
+        }
+      }
+    },
+    {
+      "rank": 35,
+      "model": "Qwen2.5-Omni-3B",
+      "family": "Open omni-modal",
+      "in_main_paper_table": true,
+      "model_url": "https://huggingface.co/Qwen/Qwen2.5-Omni-3B",
+      "overall": 0.474,
+      "attention": 0.477,
+      "intention": 0.433,
+      "reaction": 0.467,
+      "interaction": 0.52,
+      "diagnostics": {
+        "attention": {
+          "all": 0.477,
+          "nonverbal": 0.465,
+          "target": 0.762,
+          "ground": 0.338,
+          "spatial": 0.262,
+          "joint": 0.414,
+          "multimodal": 0.805
+        },
+        "intention": {
+          "all": 0.433,
+          "key": 0.335,
+          "online": 0.466,
+          "evidence": 0.574,
+          "fcr": 0.22,
+          "ias": 0.065
+        },
+        "reaction": {
+          "all": 0.467,
+          "engage": 0.126,
+          "domain": 0.769,
+          "subspeak": 0.465,
+          "joint": 0.144,
+          "comm": 0.524,
+          "nav": 0.559,
+          "manip": 0.523,
+          "idle": 0.594
+        },
+        "interaction": {
+          "all": 0.52,
+          "state": 0.258,
+          "outcome": 0.83,
+          "comp": 0.534,
+          "viol": 0.2
+        }
+      }
+    },
+    {
+      "rank": 36,
+      "model": "Flash-VStream-Qwen-7B",
+      "family": "Open streaming",
+      "in_main_paper_table": true,
+      "model_url": "https://huggingface.co/zhang9302002/Flash-VStream-Qwen-7b",
+      "overall": 0.468,
+      "attention": 0.47,
+      "intention": 0.396,
+      "reaction": 0.376,
+      "interaction": 0.631,
+      "diagnostics": {
+        "attention": {
+          "all": 0.47,
+          "nonverbal": 0.516,
+          "target": 0.675,
+          "ground": 0.367,
+          "spatial": 0.334,
+          "joint": 0.4,
+          "multimodal": 0.503
+        },
+        "intention": {
+          "all": 0.396,
+          "key": 0.384,
+          "online": 0.398,
+          "evidence": 0.415,
+          "fcr": 0.518,
+          "ias": 0.065
+        },
+        "reaction": {
+          "all": 0.376,
+          "engage": 0.131,
+          "domain": 0.711,
+          "subspeak": 0.341,
+          "joint": 0.142,
+          "comm": 0.366,
+          "nav": 0.356,
+          "manip": 0.298,
+          "idle": 0.383
+        },
+        "interaction": {
+          "all": 0.631,
+          "state": 0.232,
+          "outcome": 0.94,
+          "comp": 0.682,
+          "viol": 0.436
+        }
+      }
+    },
+    {
+      "rank": 37,
+      "model": "LLaVA-OneVision-7B",
+      "family": "Open general",
+      "in_main_paper_table": true,
+      "model_url": "https://huggingface.co/llava-hf/llava-onevision-qwen2-7b-ov-hf",
+      "overall": 0.467,
+      "attention": 0.5,
+      "intention": 0.387,
+      "reaction": 0.379,
+      "interaction": 0.602,
+      "diagnostics": {
+        "attention": {
+          "all": 0.5,
+          "nonverbal": 0.524,
+          "target": 0.757,
+          "ground": 0.346,
+          "spatial": 0.257,
+          "joint": 0.436,
+          "multimodal": 0.706
+        },
+        "intention": {
+          "all": 0.387,
+          "key": 0.355,
+          "online": 0.38,
+          "evidence": 0.476,
+          "fcr": 0.507,
+          "ias": 0.078
+        },
+        "reaction": {
+          "all": 0.379,
+          "engage": 0.132,
+          "domain": 0.704,
+          "subspeak": 0.338,
+          "joint": 0.144,
+          "comm": 0.35,
+          "nav": 0.328,
+          "manip": 0.34,
+          "idle": 0.438
+        },
+        "interaction": {
+          "all": 0.602,
+          "state": 0.232,
+          "outcome": 0.887,
+          "comp": 0.657,
+          "viol": 0.453
+        }
+      }
+    },
+    {
+      "rank": 38,
+      "model": "HY-Embodied-0.5",
+      "family": "Open embodied",
+      "in_main_paper_table": true,
+      "model_url": "https://huggingface.co/tencent/HY-Embodied-0.5",
+      "overall": 0.461,
+      "attention": 0.482,
+      "intention": 0.368,
+      "reaction": 0.563,
+      "interaction": 0.429,
+      "diagnostics": {
+        "attention": {
+          "all": 0.482,
+          "nonverbal": 0.354,
+          "target": 0.694,
+          "ground": 0.464,
+          "spatial": 0.311,
+          "joint": 0.618,
+          "multimodal": 0.462
+        },
+        "intention": {
+          "all": 0.368,
+          "key": 0.315,
+          "online": 0.388,
+          "evidence": 0.436,
+          "fcr": 0.328,
+          "ias": 0.022
+        },
+        "reaction": {
+          "all": 0.563,
+          "engage": 0.606,
+          "domain": 0.692,
+          "subspeak": 0.295,
+          "joint": 0.065,
+          "comm": 0.343,
+          "nav": 0.356,
+          "manip": 0.308,
+          "idle": 0.359
+        },
+        "interaction": {
+          "all": 0.429,
+          "state": 0.238,
+          "outcome": 0.96,
+          "comp": 0.353,
+          "viol": 0.318
+        }
+      }
+    },
+    {
+      "rank": 39,
+      "model": "Qwen3.5-4B",
+      "family": "Open general",
+      "in_main_paper_table": true,
+      "model_url": "https://huggingface.co/Qwen/Qwen3.5-4B",
+      "overall": 0.457,
+      "attention": 0.534,
+      "intention": 0.389,
+      "reaction": 0.481,
+      "interaction": 0.425,
+      "diagnostics": {
+        "attention": {
+          "all": 0.534,
+          "nonverbal": 0.551,
+          "target": 0.715,
+          "ground": 0.433,
+          "spatial": 0.398,
+          "joint": 0.467,
+          "multimodal": 0.631
+        },
+        "intention": {
+          "all": 0.389,
+          "key": 0.287,
+          "online": 0.442,
+          "evidence": 0.486,
+          "fcr": 0.475,
+          "ias": 0.123
+        },
+        "reaction": {
+          "all": 0.481,
+          "engage": 0.453,
+          "domain": 0.605,
+          "subspeak": 0.413,
+          "joint": 0.129,
+          "comm": 0.412,
+          "nav": 0.395,
+          "manip": 0.343,
+          "idle": 0.365
+        },
+        "interaction": {
+          "all": 0.425,
+          "state": 0.241,
+          "outcome": 0.417,
+          "comp": 0.523,
+          "viol": 0.322
+        }
+      }
+    },
+    {
+      "rank": 40,
+      "model": "Qwen3.5-2B",
+      "family": "Open general",
+      "in_main_paper_table": false,
+      "model_url": "https://huggingface.co/Qwen/Qwen3.5-2B",
+      "overall": 0.445,
+      "attention": 0.477,
+      "intention": 0.375,
+      "reaction": 0.53,
+      "interaction": 0.396,
+      "diagnostics": {
+        "attention": {
+          "all": 0.477,
+          "nonverbal": 0.539,
+          "target": 0.728,
+          "ground": 0.359,
+          "spatial": 0.343,
+          "joint": 0.375,
+          "multimodal": 0.606
+        },
+        "intention": {
+          "all": 0.375,
+          "key": 0.351,
+          "online": 0.356,
+          "evidence": 0.479,
+          "fcr": 0.499,
+          "ias": 0.037
+        },
+        "reaction": {
+          "all": 0.53,
+          "engage": 0.489,
+          "domain": 0.54,
+          "subspeak": 0.385,
+          "joint": 0.036,
+          "comm": 0.436,
+          "nav": 0.446,
+          "manip": 0.454,
+          "idle": 0.433
+        },
+        "interaction": {
+          "all": 0.396,
+          "state": 0.238,
+          "outcome": 0.657,
+          "comp": 0.32,
+          "viol": 0.347
+        }
+      }
+    },
+    {
+      "rank": 41,
+      "model": "VITA-1.5",
+      "family": "Open streaming",
+      "in_main_paper_table": true,
+      "model_url": "https://huggingface.co/VITA-MLLM/VITA-1.5",
+      "overall": 0.436,
+      "attention": 0.46,
+      "intention": 0.388,
+      "reaction": 0.42,
+      "interaction": 0.477,
+      "diagnostics": {
+        "attention": {
+          "all": 0.46,
+          "nonverbal": 0.425,
+          "target": 0.638,
+          "ground": 0.412,
+          "spatial": 0.379,
+          "joint": 0.446,
+          "multimodal": 0.487
+        },
+        "intention": {
+          "all": 0.388,
+          "key": 0.324,
+          "online": 0.435,
+          "evidence": 0.412,
+          "fcr": 0.32,
+          "ias": 0.091
+        },
+        "reaction": {
+          "all": 0.42,
+          "engage": 0.344,
+          "domain": 0.655,
+          "subspeak": 0.342,
+          "joint": 0.103,
+          "comm": 0.313,
+          "nav": 0.3,
+          "manip": 0.251,
+          "idle": 0.33
+        },
+        "interaction": {
+          "all": 0.477,
+          "state": 0.243,
+          "outcome": 0.542,
+          "comp": 0.523,
+          "viol": 0.468
+        }
+      }
+    },
+    {
+      "rank": 42,
+      "model": "HY-Embodied-0.5-X",
+      "family": "Open embodied",
+      "in_main_paper_table": false,
+      "model_url": "https://huggingface.co/tencent/HY-Embodied-0.5",
+      "overall": 0.432,
+      "attention": 0.461,
+      "intention": 0.373,
+      "reaction": 0.48,
+      "interaction": 0.415,
+      "diagnostics": {
+        "attention": {
+          "all": 0.461,
+          "nonverbal": 0.305,
+          "target": 0.677,
+          "ground": 0.443,
+          "spatial": 0.257,
+          "joint": 0.629,
+          "multimodal": 0.471
+        },
+        "intention": {
+          "all": 0.373,
+          "key": 0.319,
+          "online": 0.392,
+          "evidence": 0.443,
+          "fcr": 0.247,
+          "ias": 0.008
+        },
+        "reaction": {
+          "all": 0.48,
+          "engage": 0.515,
+          "domain": 0.671,
+          "subspeak": 0.29,
+          "joint": 0.126,
+          "comm": 0.333,
+          "nav": 0.337,
+          "manip": 0.315,
+          "idle": 0.363
+        },
+        "interaction": {
+          "all": 0.415,
+          "state": 0.29,
+          "outcome": 0.905,
+          "comp": 0.306,
+          "viol": 0.338
+        }
+      }
+    },
+    {
+      "rank": 43,
+      "model": "Llama-3.2-11B-Vision-Instruct",
+      "family": "Open general",
+      "in_main_paper_table": true,
+      "model_url": "https://huggingface.co/meta-llama/Llama-3.2-11B-Vision-Instruct",
+      "overall": 0.423,
+      "attention": 0.391,
+      "intention": 0.384,
+      "reaction": 0.463,
+      "interaction": 0.455,
+      "diagnostics": {
+        "attention": {
+          "all": 0.391,
+          "nonverbal": 0.394,
+          "target": 0.62,
+          "ground": 0.261,
+          "spatial": 0.136,
+          "joint": 0.387,
+          "multimodal": 0.714
+        },
+        "intention": {
+          "all": 0.384,
+          "key": 0.269,
+          "online": 0.422,
+          "evidence": 0.549,
+          "fcr": 0.25,
+          "ias": 0.011
+        },
+        "reaction": {
+          "all": 0.463,
+          "engage": 0.371,
+          "domain": 0.638,
+          "subspeak": 0.364,
+          "joint": 0.128,
+          "comm": 0.426,
+          "nav": 0.407,
+          "manip": 0.492,
+          "idle": 0.519
+        },
+        "interaction": {
+          "all": 0.455,
+          "state": 0.249,
+          "outcome": 0.608,
+          "comp": 0.498,
+          "viol": 0.381
+        }
+      }
+    },
+    {
+      "rank": 44,
+      "model": "Phi-4-Multimodal-Instruct",
+      "family": "Open omni-modal",
+      "in_main_paper_table": true,
+      "model_url": "https://huggingface.co/microsoft/Phi-4-multimodal-instruct",
+      "overall": 0.406,
+      "attention": 0.435,
+      "intention": 0.398,
+      "reaction": 0.435,
+      "interaction": 0.356,
+      "diagnostics": {
+        "attention": {
+          "all": 0.435,
+          "nonverbal": 0.4,
+          "target": 0.541,
+          "ground": 0.368,
+          "spatial": 0.336,
+          "joint": 0.4,
+          "multimodal": 0.751
+        },
+        "intention": {
+          "all": 0.398,
+          "key": 0.285,
+          "online": 0.426,
+          "evidence": 0.587,
+          "fcr": 0.083,
+          "ias": 0.0
+        },
+        "reaction": {
+          "all": 0.435,
+          "engage": 0.133,
+          "domain": 0.648,
+          "subspeak": 0.435,
+          "joint": 0.137,
+          "comm": 0.524,
+          "nav": 0.502,
+          "manip": 0.599,
+          "idle": 0.647
+        },
+        "interaction": {
+          "all": 0.356,
+          "state": 0.217,
+          "outcome": 0.917,
+          "comp": 0.172,
+          "viol": 0.301
+        }
+      }
+    },
+    {
+      "rank": 45,
+      "model": "Qwen3.5-0.8B",
+      "family": "Open general",
+      "in_main_paper_table": true,
+      "model_url": "https://huggingface.co/Qwen/Qwen3.5-0.8B",
+      "overall": 0.396,
+      "attention": 0.381,
+      "intention": 0.299,
+      "reaction": 0.506,
+      "interaction": 0.398,
+      "diagnostics": {
+        "attention": {
+          "all": 0.381,
+          "nonverbal": 0.421,
+          "target": 0.537,
+          "ground": 0.278,
+          "spatial": 0.292,
+          "joint": 0.265,
+          "multimodal": 0.551
+        },
+        "intention": {
+          "all": 0.299,
+          "key": 0.259,
+          "online": 0.276,
+          "evidence": 0.446,
+          "fcr": 0.713,
+          "ias": 0.036
+        },
+        "reaction": {
+          "all": 0.506,
+          "engage": 0.517,
+          "domain": 0.46,
+          "subspeak": 0.343,
+          "joint": 0.044,
+          "comm": 0.427,
+          "nav": 0.482,
+          "manip": 0.493,
+          "idle": 0.489
+        },
+        "interaction": {
+          "all": 0.398,
+          "state": 0.281,
+          "outcome": 0.74,
+          "comp": 0.353,
+          "viol": 0.329
+        }
+      }
+    }
+  ]
+}

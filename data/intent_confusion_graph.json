@@ -1,0 +1,161 @@
+{
+  "schema_version": "airis-intent-hard-negative-policy-v1",
+  "ontology_version": "intent-v1",
+  "policy_version": "v02-5-event-fixed-hard-negative-v1",
+  "undetermined_id": "undetermined",
+  "minimum_distractor_gold_events": 10,
+  "notes": [
+    "Edges are expert-defined semantic confusions and never use model predictions.",
+    "For intent_at, one semantic candidate block is frozen for the complete event timeline.",
+    "Other is an open-set fallback and is not used as a distractor unless an edge explicitly opts in.",
+    "Insufficient evidence is mandatory in every intent_at and intent_kf candidate block."
+  ],
+  "topic_ids": [
+    "consultative_sales",
+    "guidance_wayfinding",
+    "market_commerce",
+    "on_premise_dining",
+    "safety_institutional",
+    "social_encounters",
+    "sports_recreation",
+    "store_retail",
+    "street_food",
+    "transaction_fulfillment",
+    "work_professional_services"
+  ],
+  "candidate_triads": [
+    {"id": "request_core", "labels": ["request_action", "ask_information", "request_item"]},
+    {"id": "guidance_request", "labels": ["request_guide", "ask_information", "request_action"]},
+    {"id": "social_open", "labels": ["offer_help", "small_talk", "other"]},
+    {"id": "complaint_social", "labels": ["complain", "small_talk", "other"]},
+    {"id": "sales_exchange", "labels": ["offer_sell", "offer_help", "request_item"]},
+    {"id": "professional_help", "labels": ["professional_service", "offer_help", "request_action"]},
+    {"id": "payment_exchange", "labels": ["collect_payment", "offer_sell", "request_item"]},
+    {"id": "non_intent_social", "labels": ["none_passing", "small_talk", "other"]},
+    {"id": "farewell_social", "labels": ["farewell", "small_talk", "other"]},
+    {"id": "other_help_action", "labels": ["other", "offer_help", "request_action"]},
+    {"id": "other_social_action", "labels": ["other", "small_talk", "request_action"]},
+    {"id": "help_social_action", "labels": ["offer_help", "small_talk", "request_action"]},
+    {"id": "help_item_action", "labels": ["offer_help", "request_item", "request_action"]},
+    {"id": "help_social_item", "labels": ["offer_help", "small_talk", "request_item"]},
+    {"id": "info_social_action", "labels": ["ask_information", "small_talk", "request_action"]},
+    {"id": "info_help_action", "labels": ["ask_information", "offer_help", "request_action"]},
+    {"id": "info_help_social", "labels": ["ask_information", "offer_help", "small_talk"]}
+  ],
+  "labels": {
+    "undetermined": {
+      "text": "Insufficient evidence to determine the intention",
+      "text_zh": "尚不能判定",
+      "boundary": "Use only when the evidence available by the query time is insufficient to identify a concrete social intention.",
+      "axis": "epistemic"
+    },
+    "request_guide": {
+      "text": "Guidance request",
+      "text_zh": "请求指路",
+      "boundary": "A request for route, direction, location, or navigation guidance; not a general factual question.",
+      "axis": "request",
+      "topic_affinity": ["guidance_wayfinding", "store_retail", "transaction_fulfillment", "work_professional_services"],
+      "hard_neighbors": ["ask_information", "request_action", "offer_help", "small_talk"]
+    },
+    "request_item": {
+      "text": "Object request",
+      "text_zh": "请求物品",
+      "boundary": "A request whose desired outcome is transfer, serving, or provision of a physical item.",
+      "axis": "request",
+      "topic_affinity": ["consultative_sales", "market_commerce", "on_premise_dining", "store_retail", "street_food"],
+      "hard_neighbors": ["request_action", "ask_information", "offer_sell", "offer_help", "collect_payment", "small_talk"]
+    },
+    "farewell": {
+      "text": "Farewell",
+      "text_zh": "告别",
+      "boundary": "An attempt to close or leave a social encounter, not generic conversation or merely passing by.",
+      "axis": "social",
+      "topic_affinity": ["social_encounters", "market_commerce", "on_premise_dining", "street_food", "work_professional_services"],
+      "hard_neighbors": ["small_talk", "none_passing", "offer_help", "other"],
+      "allow_other_as_negative": true
+    },
+    "professional_service": {
+      "text": "Professional service",
+      "text_zh": "专业服务",
+      "boundary": "Provision of skilled or role-based service, distinct from spontaneous help or selling an item.",
+      "axis": "service_transaction",
+      "topic_affinity": ["consultative_sales", "sports_recreation", "work_professional_services"],
+      "hard_neighbors": ["offer_help", "request_action", "ask_information", "offer_sell"]
+    },
+    "offer_sell": {
+      "text": "Offer to sell an item",
+      "text_zh": "售卖物品",
+      "boundary": "An explicit attempt to sell or promote an item, not neutral item provision or general service.",
+      "axis": "service_transaction",
+      "topic_affinity": ["consultative_sales", "market_commerce", "store_retail", "street_food"],
+      "hard_neighbors": ["offer_help", "request_item", "professional_service", "ask_information", "collect_payment"]
+    },
+    "none_passing": {
+      "text": "No interaction intent",
+      "text_zh": "无意图/路过",
+      "boundary": "The person is merely passing or present without seeking social engagement; evidence is sufficient to make that determination.",
+      "axis": "non_intent",
+      "topic_affinity": ["social_encounters", "sports_recreation", "work_professional_services"],
+      "hard_neighbors": ["small_talk", "offer_help", "other", "farewell"],
+      "allow_other_as_negative": true
+    },
+    "other": {
+      "text": "Other",
+      "text_zh": "其他",
+      "boundary": "A concrete interaction intention is visible but does not fit any named ontology class; not a synonym for uncertainty.",
+      "axis": "open_set",
+      "topic_affinity": ["consultative_sales", "guidance_wayfinding", "market_commerce", "on_premise_dining", "safety_institutional", "social_encounters", "sports_recreation", "store_retail", "street_food", "transaction_fulfillment", "work_professional_services"],
+      "hard_neighbors": ["small_talk", "offer_help", "request_action", "ask_information", "farewell", "none_passing", "complain"]
+    },
+    "ask_information": {
+      "text": "Information seeking",
+      "text_zh": "寻求信息",
+      "boundary": "A request for factual or explanatory information, excluding route guidance and requests for an object or action.",
+      "axis": "request",
+      "topic_affinity": ["consultative_sales", "guidance_wayfinding", "market_commerce", "on_premise_dining", "safety_institutional", "social_encounters", "store_retail", "transaction_fulfillment", "work_professional_services"],
+      "hard_neighbors": ["request_guide", "request_action", "request_item", "small_talk", "complain", "offer_help"]
+    },
+    "small_talk": {
+      "text": "Social conversation",
+      "text_zh": "闲聊寒暄",
+      "boundary": "Conversation primarily serving social rapport rather than requesting a concrete item, action, route, or fact.",
+      "axis": "social",
+      "topic_affinity": ["consultative_sales", "guidance_wayfinding", "market_commerce", "on_premise_dining", "safety_institutional", "social_encounters", "sports_recreation", "store_retail", "street_food", "transaction_fulfillment", "work_professional_services"],
+      "hard_neighbors": ["ask_information", "offer_help", "complain", "farewell", "other", "none_passing", "request_action", "request_item"],
+      "allow_other_as_negative": true
+    },
+    "collect_payment": {
+      "text": "Payment collection",
+      "text_zh": "收取款项",
+      "boundary": "An attempt to collect or settle payment, distinct from selling, requesting an item, or requesting an unrelated action.",
+      "axis": "service_transaction",
+      "topic_affinity": ["market_commerce", "on_premise_dining", "store_retail", "street_food", "transaction_fulfillment"],
+      "hard_neighbors": ["request_item", "request_action", "offer_sell", "ask_information"]
+    },
+    "complain": {
+      "text": "Complaint",
+      "text_zh": "抱怨",
+      "boundary": "Expression of dissatisfaction intended as a complaint, rather than neutral information seeking or social conversation.",
+      "axis": "social",
+      "topic_affinity": ["consultative_sales", "market_commerce", "on_premise_dining", "safety_institutional", "social_encounters", "store_retail", "transaction_fulfillment", "work_professional_services"],
+      "hard_neighbors": ["request_action", "ask_information", "small_talk", "request_item", "other"],
+      "allow_other_as_negative": true
+    },
+    "request_action": {
+      "text": "Action request",
+      "text_zh": "请求帮忙做事",
+      "boundary": "A request that Ego or another person perform an action; excludes physical item transfer, directions, and purely factual answers.",
+      "axis": "request",
+      "topic_affinity": ["consultative_sales", "guidance_wayfinding", "market_commerce", "on_premise_dining", "safety_institutional", "social_encounters", "sports_recreation", "store_retail", "street_food", "transaction_fulfillment", "work_professional_services"],
+      "hard_neighbors": ["request_item", "ask_information", "request_guide", "offer_help", "complain", "professional_service", "other", "small_talk"]
+    },
+    "offer_help": {
+      "text": "Offer of assistance",
+      "text_zh": "主动提供帮助",
+      "boundary": "A spontaneous offer to assist another party, distinct from providing a professional service or responding to a request.",
+      "axis": "service_transaction",
+      "topic_affinity": ["consultative_sales", "guidance_wayfinding", "market_commerce", "on_premise_dining", "safety_institutional", "social_encounters", "sports_recreation", "store_retail", "street_food", "transaction_fulfillment", "work_professional_services"],
+      "hard_neighbors": ["request_action", "professional_service", "offer_sell", "request_guide", "small_talk", "other", "request_item", "ask_information"]
+    }
+  }
+}

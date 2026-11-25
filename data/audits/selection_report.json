@@ -1,0 +1,97 @@
+{
+  "schema_version": "airis-streaming-v02-5-core3-selection-v1",
+  "generated_at": "2026-09-20T15:40:54.270532+08:00",
+  "parent_release": "airis_streaming_bench_v02_5_core2",
+  "status": "option_compressed_hard_distractor_core",
+  "config": {
+    "seed": "airis-v02-5-core3-option-compression-v1",
+    "target_capabilities": [
+      "interaction.violation_type_at",
+      "interaction.violation_types_multi",
+      "reaction.speak_subtype",
+      "reaction.subaction"
+    ],
+    "option_count_rule": "min(all_options, max(5, gold+2))",
+    "distractor_policy": "hard-distractor-v1 (25-model wrong-selection frequency)",
+    "anchor_texts": {
+      "reaction.subaction": [
+        "Other action"
+      ],
+      "interaction.violation_type_at": [
+        "No violation"
+      ],
+      "interaction.violation_types_multi": [
+        "No violation"
+      ]
+    },
+    "selection_uses_model_predictions": true,
+    "inference_required_for_targets": true
+  },
+  "counts": {
+    "questions": 8000,
+    "compressed_questions": 1120,
+    "reused_questions": 6880,
+    "by_layer": {
+      "attention": 2000,
+      "intention": 2000,
+      "interaction": 2000,
+      "reaction": 2000
+    },
+    "by_capability": {
+      "attention.body_orientation_bbox": 118,
+      "attention.body_orientation_pair": 119,
+      "attention.body_orientation_target": 119,
+      "attention.body_pose": 119,
+      "attention.body_stance": 118,
+      "attention.emotion": 119,
+      "attention.gaze_target": 118,
+      "attention.gaze_target_bbox": 119,
+      "attention.gaze_target_pair": 119,
+      "attention.hand_gesture": 119,
+      "attention.hand_target": 34,
+      "attention.hand_target_bbox": 34,
+      "attention.hand_target_pair": 33,
+      "attention.interactant_bbox": 119,
+      "attention.interactant_pair": 118,
+      "attention.overall_dominant_modalities": 119,
+      "attention.overall_target": 119,
+      "attention.overall_target_bbox": 118,
+      "attention.overall_target_pair": 119,
+      "intention.evidence": 343,
+      "intention.intent_at": 874,
+      "intention.intent_kf": 783,
+      "interaction.d1_completeness": 200,
+      "interaction.d1_mutual": 200,
+      "interaction.d2_spatial": 200,
+      "interaction.d3_physical": 200,
+      "interaction.d4_comm": 200,
+      "interaction.d5_category": 200,
+      "interaction.state": 345,
+      "interaction.violation_presence_at": 200,
+      "interaction.violation_type_at": 50,
+      "interaction.violation_types_multi": 205,
+      "reaction.action_domain": 523,
+      "reaction.engagement_decision": 612,
+      "reaction.speak_subtype": 259,
+      "reaction.subaction": 606
+    },
+    "compressed_option_count_range": {
+      "interaction.violation_type_at": {
+        "min": 5,
+        "max": 5
+      },
+      "interaction.violation_types_multi": {
+        "min": 5,
+        "max": 10
+      },
+      "reaction.speak_subtype": {
+        "min": 5,
+        "max": 5
+      },
+      "reaction.subaction": {
+        "min": 5,
+        "max": 11
+      }
+    }
+  }
+}

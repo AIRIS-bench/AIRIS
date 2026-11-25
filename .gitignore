@@ -1,0 +1,9 @@
+.cache/
+.venv/
+frames/
+reports/media_build.json
+__pycache__/
+*.py[cod]
+*.part
+*.ytdl
+cookies*.txt

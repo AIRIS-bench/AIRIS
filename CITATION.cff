@@ -1,0 +1,65 @@
+cff-version: 1.2.0
+message: "If you use AIRIS, please cite the paper and this benchmark release."
+title: "AIRIS Streaming Benchmark v02.5-core3"
+type: dataset
+version: "02.5-core3"
+date-released: 2026-11-15
+url: "https://airis-bench.github.io/"
+authors:
+  - family-names: "Zhou"
+    given-names: "Yuchen"
+  - family-names: "Wu"
+    given-names: "Hongsheng"
+  - family-names: "Tang"
+    given-names: "Jiayu"
+  - family-names: "Mao"
+    given-names: "Yunxuan"
+  - family-names: "Ye"
+    given-names: "Hanjing"
+  - family-names: "Zhang"
+    given-names: "Shenghao"
+  - family-names: "Tang"
+    given-names: "Jing"
+  - family-names: "Fan"
+    given-names: "Chun-Kai"
+  - family-names: "Huang"
+    given-names: "Yufei"
+  - family-names: "Ling"
+    given-names: "Yonggen"
+  - family-names: "Zhang"
+    given-names: "He"
+license: CC-BY-4.0
+keywords:
+  - social embodied intelligence
+  - egocentric video
+  - streaming video understanding
+  - vision-language models
+  - multimodal evaluation
+preferred-citation:
+  type: article
+  title: "AIRIS: Benchmarking Social Embodied Intelligence in Egocentric Streaming Videos"
+  authors:
+    - family-names: "Zhou"
+      given-names: "Yuchen"
+    - family-names: "Wu"
+      given-names: "Hongsheng"
+    - family-names: "Tang"
+      given-names: "Jiayu"
+    - family-names: "Mao"
+      given-names: "Yunxuan"
+    - family-names: "Ye"
+      given-names: "Hanjing"
+    - family-names: "Zhang"
+      given-names: "Shenghao"
+    - family-names: "Tang"
+      given-names: "Jing"
+    - family-names: "Fan"
+      given-names: "Chun-Kai"
+    - family-names: "Huang"
+      given-names: "Yufei"
+    - family-names: "Ling"
+      given-names: "Yonggen"
+    - family-names: "Zhang"
+      given-names: "He"
+  journal: "arXiv preprint"
+  year: 2026

@@ -1,0 +1,79 @@
+{
+  "schema_version": "airis-open-release-manifest-v1",
+  "dataset_version": "airis_streaming_bench_v02_5_core3_open",
+  "title": "AIRIS Streaming Benchmark v02.5-core3",
+  "release_date": "2026-11-15",
+  "split": "test",
+  "gold_answers_public": true,
+  "media_distribution": {
+    "source_videos_included": false,
+    "frames_included": false,
+    "source_platform": "youtube",
+    "source_index": "data/source_videos.jsonl",
+    "frame_index": "data/frame_index.jsonl",
+    "reconstruction_tool": "tools/fetch_and_extract_frames.py",
+    "byte_exact_reproduction": false
+  },
+  "counts": {
+    "questions": 8000,
+    "clips": 357,
+    "source_videos": 276,
+    "referenced_frames": 20295,
+    "capabilities": 36,
+    "by_layer": {
+      "attention": 2000,
+      "intention": 2000,
+      "interaction": 2000,
+      "reaction": 2000
+    }
+  },
+  "core_files": {
+    "questions": "data/questions.jsonl",
+    "model_inputs": "data/model_inputs.jsonl",
+    "clip_metadata": "data/clip_metadata.jsonl",
+    "source_videos": "data/source_videos.jsonl",
+    "frame_index": "data/frame_index.jsonl",
+    "scorer": "tools/score_streaming.py",
+    "validator": "tools/validate_release.py"
+  },
+  "licenses": {
+    "code": "MIT",
+    "airis_annotations_and_metadata": "CC-BY-4.0",
+    "third_party_media": "not_included_and_not_licensed"
+  },
+  "checksums": {
+    ".gitignore": "1c8c17ef4f69ae5a839b649fa1081ff018a3fb81c47fe123c9687f656f264ff6",
+    "CITATION.cff": "b0cbd1e8600b5b497cbfa79da6cea0738af2926d43bd6eaa3b43996eb6247ab7",
+    "DATA_CARD.md": "846493113661887543e6244da6f0f9c739ba90c7f04653be1bc5f560d61e5e60",
+    "DATA_LICENSE.md": "8d304c0b294d3098943b44b704048d889911b6fc353cc0deea6cafd3c98ba8e1",
+    "LICENSE": "629d71c9abc317c7c763ec3cce4863d7c72c1c1a3fae6888ba9e3e044c1f5f65",
+    "README.md": "c2fe0823a90c38e8776cdc66b876a852862b9b1f368e2492350ac718441bd37f",
+    "SCHEMA.md": "efe611f601bfd9a635a1fb5f5e73fb5cfe07bbc1bce203e527b7b6cd488c243d",
+    "THIRD_PARTY_NOTICES.md": "032b4559eb5a294ec96756f43a97da71f0ea8a8874eea08d5f9ca2cde22e303d",
+    "data/annotations/intention.jsonl": "3484193faf5c094521cab45df66051b8711d3b4304e5bcbd92385894f9443dac",
+    "data/annotations/interaction.jsonl": "77cfd335a627af4267ffaa9b6b49baf21a9150024efb97ade49e1ca99ab72dc0",
+    "data/annotations/interaction_v2.jsonl": "fa65822cb2adec31a8bc9fe41952ec31ecf3ccf31d5125dd4df935414da2810e",
+    "data/annotations/reaction.jsonl": "ba4ac02043a7e0d3caecd693fa5dbff17141b6ca1d8056d01f07693ba98cd572",
+    "data/audits/core_qids.txt": "593558be0efb1ebb7b4c97ccdc45e676dc890f7847b82115168dbed497b64c3a",
+    "data/audits/hard_negative_audit.jsonl": "46ee2b7868d683cac90491f72eed0e96104baad70cdfd377e3b5993d4c4f90b0",
+    "data/audits/option_compression_audit.jsonl": "565154cef124d7145cd245a4b99ad4bd0776060d7cbe401e52e83d3704b5157f",
+    "data/audits/selection_report.json": "f0cab60898162eaae958d5168ca5b133d79f1828c646d8c0310495ec66d5cb07",
+    "data/clip_metadata.jsonl": "5b0c91db13708bf6b40fbec24ffeb38915f85b1713eef26276dae068c05c2961",
+    "data/english_glossary.json": "0ef6b1cb8df2040a860c1ae874263c08d9e0ae3539ea36980f36e01f11121b96",
+    "data/frame_index.jsonl": "348e893f47e3fe108afa765b8e50869f15bc554e85deb0ee89397071005be223",
+    "data/intent_confusion_graph.json": "ea45c18bd1286ec18ad223799a20fea52ea78abbf9cc2f998650c1c4aa1e0130",
+    "data/model_inputs.jsonl": "3860bd5ee623af0c6d13239f7467104fa2eadf7b5bbb2957e3cc54a620567d66",
+    "data/questions.jsonl": "161a37667279e237e77eb2b54e24f88ddd6a7c6ec1630e03d014eeab7942d0f3",
+    "data/source_videos.jsonl": "4d640efc4e15b116f588f0759c6e2667ef89bf8f58a162617140fad751530f95",
+    "predictions/baseline_always_a.jsonl": "f8d5e024104e118aaeb7443381df25445b024bbe0e9337ccb75b5f2c2e42e108",
+    "predictions/baseline_random.jsonl": "f77a8deece984ffa8ce5d4c4aae1d81bcd180eb91aef5196ea9568d413b07e8d",
+    "predictions/baseline_undetermined_first.jsonl": "151f150c0e7568de93e2a0336c73162b8e665c7a00bde713239eb28cea0a75d4",
+    "requirements.txt": "5c9ab502eb969106d85ed1ef25a2bf3980d6e6c8f9479a13cec19742f048ba24",
+    "results/LEADERBOARD.md": "c70c3b1755cfd63424596779b99c8253d730dd6485f5a54eba56e3d9d80cb76d",
+    "results/leaderboard.json": "3aedc3c3b25e1126d7886192aa1640158e3882184ae22b2f029054b6e5beb3e3",
+    "tools/fetch_and_extract_frames.py": "34cde9a9972443097834dfaf039a4aa6f2a2244ecfa38b1e638250116ff45319",
+    "tools/score_streaming.py": "7560ff4405b10659b93c909a6f74f0f00ace082c4c069f063b24765d79103ad4",
+    "tools/streaming_prompt.py": "5415461fa67e0d8c6322d3a88b59f69fa85db76d5b3baf48c4700305399f442a",
+    "tools/validate_release.py": "7866ea4fe9b8775f33bd044302262216f54940e374d1b85fb3c3550a93b02471"
+  }
+}

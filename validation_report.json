@@ -1,0 +1,18 @@
+{
+  "schema_version": "airis-open-release-validation-v1",
+  "status": "passed",
+  "n_failures": 0,
+  "failures": [],
+  "failures_truncated": 0,
+  "counts": {
+    "questions": 8000,
+    "clips": 357,
+    "source_videos": 276,
+    "referenced_frames": 20295,
+    "capabilities": 36,
+    "checksum_failures": 0,
+    "missing_frames": null,
+    "invalid_frames": null
+  },
+  "media_mode": "metadata_only"
+}
