@@ -38,6 +38,7 @@ keywords:
 preferred-citation:
   type: article
   title: "AIRIS: Benchmarking Social Embodied Intelligence in Egocentric Streaming Videos"
+  url: "https://arxiv.org/abs/2611.34347"
   authors:
     - family-names: "Zhou"
       given-names: "Yuchen"
@@ -61,5 +62,5 @@ preferred-citation:
       given-names: "Yonggen"
     - family-names: "Zhang"
       given-names: "He"
-  journal: "arXiv preprint"
+  journal: "arXiv preprint arXiv:2611.34347"
   year: 2026

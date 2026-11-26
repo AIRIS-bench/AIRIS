@@ -7,6 +7,7 @@
 <h1 align="center">AIRIS: Benchmarking Social Embodied Intelligence in Egocentric Streaming Videos</h1>
 
 [![Project Page](https://img.shields.io/badge/Project-Page-5B5BD6)](https://airis-bench.github.io/)
+[![arXiv](https://img.shields.io/badge/arXiv-2611.34347-b31b1b.svg)](https://arxiv.org/abs/2611.34347)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](#installation)
 [![Code License](https://img.shields.io/badge/Code-MIT-green.svg)](LICENSE)
 [![Data License](https://img.shields.io/badge/Data-CC%20BY%204.0-lightgrey.svg)](DATA_LICENSE.md)
@@ -208,10 +209,13 @@ If AIRIS is useful in your research, please cite the paper:
 
 ```bibtex
 @article{zhou2026airis,
-  title   = {AIRIS: Benchmarking Social Embodied Intelligence in Egocentric Streaming Videos},
-  author  = {Zhou, Yuchen and Wu, Hongsheng and Tang, Jiayu and Mao, Yunxuan and Ye, Hanjing and Zhang, Shenghao and Tang, Jing and Fan, Chun-Kai and Huang, Yufei and Ling, Yonggen and Zhang, He},
-  journal = {arXiv preprint},
-  year    = {2026}
+  title         = {AIRIS: Benchmarking Social Embodied Intelligence in Egocentric Streaming Videos},
+  author        = {Zhou, Yuchen and Wu, Hongsheng and Tang, Jiayu and Mao, Yunxuan and Ye, Hanjing and Zhang, Shenghao and Tang, Jing and Fan, Chun-Kai and Huang, Yufei and Ling, Yonggen and Zhang, He},
+  journal       = {arXiv preprint arXiv:2611.34347},
+  year          = {2026},
+  eprint        = {2611.34347},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CV}
 }
 ```
 
