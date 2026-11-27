@@ -15,12 +15,13 @@
   Shenghao Zhang ·
   <a href="https://vaew.github.io/">Jing Tang</a> ·
   Chun-Kai Fan ·
-  Yufei Huang ·
-  <a href="https://ygling2008.github.io/">Yonggen Ling</a> ·
+  Yufei Huang<sup>*</sup> ·
+  <a href="https://ygling2008.github.io/">Yonggen Ling</a><sup>*</sup> ·
   <a href="https://cghezhang.github.io/">He Zhang</a>
 </p>
 
 <p align="center"><strong>Tencent Robotics X Lab</strong></p>
+<p align="center"><sup>*</sup> Corresponding authors</p>
 
 [![Project Page](https://img.shields.io/badge/Project-Page-5B5BD6)](https://airis-bench.github.io/)
 [![arXiv](https://img.shields.io/badge/arXiv-2611.34347-b31b1b.svg)](https://arxiv.org/abs/2611.34347)
